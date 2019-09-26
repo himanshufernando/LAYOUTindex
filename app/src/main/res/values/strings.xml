@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LAYOUTindex</string>
+
+
+    <string name="app_splash_title">LAYOUTindex Demo</string>
+
+    <string name="app_home_title">User Information</string>
+
+</resources>
