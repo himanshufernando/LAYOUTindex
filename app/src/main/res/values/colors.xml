@@ -6,6 +6,15 @@
 
 
     <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+
     <color name="colorAppBackgroun">#ededed</color>
+    <color name="colorborder">#d0d0d0</color>
+    <color name="colorEdittextBackground">#00000000</color>
+
+    <color name="colorText">#61000000</color>
+
+
+
 
 </resources>

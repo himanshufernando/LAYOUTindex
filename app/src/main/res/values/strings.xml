@@ -6,4 +6,18 @@
 
     <string name="app_home_title">User Information</string>
 
+
+    <string name="app_home_btn_search">Search</string>
+    <string name="app_home_edt_search">User ID</string>
+    <string name="app_home_title_text">AVAILABLE USERS</string>
+
+
+    <string name="app_home_list_userid">ID</string>
+    <string name="app_home_list_username">Name</string>
+
+    <string name="app_home_dialog_user_firstname">First Name</string>
+    <string name="app_home_dialog_user_lastname">Last Name</string>
+    <string name="app_home_dialog_useremail">Email</string>
+    <string name="app_home_dialog_btn_close">Close</string>
+
 </resources>

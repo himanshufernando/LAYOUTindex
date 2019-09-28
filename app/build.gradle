@@ -27,10 +27,18 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            minifyEnabled true
+            buildConfigField "String", "API_BASE_URL", '\"https://reqres.in/api/\"'
+        }
+        debug {
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "API_BASE_URL", '\"https://reqres.in/api/\"'
         }
     }
+
+
 }
 
 dependencies {
@@ -52,8 +60,11 @@ dependencies {
     implementation "com.google.android.material:material:$material_version"
 
 
-    // kotlin
+    // databinding
     kapt "com.android.databinding:compiler:$databinding_version"
+
+    // lifecycle
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_extensions_versuion"
 
     // multidex
     implementation "com.android.support:multidex:$databinding_version"
@@ -61,6 +72,12 @@ dependencies {
     // Dagger 2
     implementation "com.google.dagger:dagger:$dagger_version"
     annotationProcessor "com.google.dagger:dagger-compiler:$dagger_compiler_version"
+
+
+    //reactivex
+    implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
+    implementation "io.reactivex.rxjava2:rxjava:$rxjava_version"
+    implementation "io.reactivex.rxjava2:rxkotlin:$rxkotlin_version"
 
 
     //retrofit2
@@ -81,5 +98,6 @@ dependencies {
     implementation "com.github.bumptech.glide:glide:$glide_version"
     annotationProcessor "com.github.bumptech.glide:compiler:$glide_compiler_version"
 
+    implementation "com.github.florent37:shapeofview:$shapeofview_version"
 
 }

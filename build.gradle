@@ -17,14 +17,25 @@ buildscript {
 
 
     ext.databinding_version = '3.0.0-beta1'
+    ext.lifecycle_extensions_versuion = '2.0.0'
     ext.multidex_version = '1.0.3'
     ext.dagger_version = '2.15'
     ext.dagger_compiler_version = '2.15'
+
+
+    ext.rxandroid_version = '2.1.1'
+    ext.rxjava_version = '2.2.0'
+    ext.rxkotlin_version = '2.4.0'
+
+
+
 
     ext.retrofit_version = '2.6.1'
     ext.retrofit_gson_version = '2.6.1'
     ext.retrofit_rxjava2_adapter_version = '1.0.0'
     ext.retrofit_scalars_version = '2.5.0'
+
+
 
     ext.okhttp_version = '3.10.0'
 
@@ -33,6 +44,7 @@ buildscript {
     ext.glide_version = '4.9.0'
     ext.glide_compiler_version = '4.9.0'
 
+    ext.shapeofview_version = '1.4.7'
 
 
 

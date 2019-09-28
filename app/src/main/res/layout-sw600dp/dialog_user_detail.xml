@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.florent37.shapeofview.shapes.CutCornerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:shape_cutCorner_bottomRightSize="15dp"
+    app:shape_cutCorner_topLeftSize="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/imageview_avatar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/logo" >
+
+        </com.mikhaellopez.circularimageview.CircularImageView>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imageview_avatar"
+            android:layout_toRightOf="@+id/imageview_avatar">
+
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_home_dialog_user_firstname"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_light"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/textview_user_fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/roboto_light"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_home_dialog_user_lastname"
+                android:layout_below="@+id/textview_user_fname"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_light"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/textview_user_lname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="100dp"
+                android:layout_below="@+id/textview1"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/roboto_light"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+
+
+            <TextView
+                android:id="@+id/textview3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_home_dialog_useremail"
+                android:layout_below="@+id/textview_user_lname"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_light"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textview_user_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="100dp"
+                android:layout_below="@+id/textview2"
+                android:fontFamily="@font/roboto_light"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+        <com.github.florent37.shapeofview.shapes.CutCornerView
+            android:id="@+id/clipCorner"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/relativelayout1"
+            android:layout_margin="20dp"
+            app:shape_cutCorner_bottomRightSize="10dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/roboto_light"
+                android:text="@string/app_home_dialog_btn_close"
+                android:textColor="@color/colorWhite"
+                android:textAllCaps="false"
+                android:onClick="userDetailsDialogClose"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </com.github.florent37.shapeofview.shapes.CutCornerView>
+
+
+
+
+
+    </RelativeLayout>
+
+</com.github.florent37.shapeofview.shapes.CutCornerView>
+
+
+

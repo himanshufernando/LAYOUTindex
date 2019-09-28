@@ -46,7 +46,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintlayout2"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="150dp"
                 android:background="@color/colorWhite"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -55,7 +55,7 @@
                 <RelativeLayout
                     android:id="@+id/relativelayout"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="match_parent"
                     android:background="@color/colorWhite"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
@@ -63,8 +63,8 @@
 
                     <com.github.florent37.shapeofview.shapes.CutCornerView
                         android:id="@+id/clipCorner"
-                        android:layout_width="120dp"
-                        android:layout_height="45dp"
+                        android:layout_width="200dp"
+                        android:layout_height="60dp"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="20dp"
@@ -86,7 +86,7 @@
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
+                        android:layout_height="60dp"
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"
@@ -106,7 +106,7 @@
                             android:inputType="number"
                             android:textColor="@color/colorText"
                             android:textColorHint="@color/colorText"
-                            android:textSize="16sp"
+                           android:textSize="18sp"
                             android:textStyle="bold" />
                     </RelativeLayout>
                 </RelativeLayout>
@@ -124,7 +124,8 @@
                 android:fontFamily="@font/roboto_light"
                 android:text="@string/app_home_title_text"
                 android:textColor="@color/colorBlack"
-                android:textSize="16sp"
+                android:textSize="18sp"
+                android:textStyle="bold"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -136,7 +137,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_marginTop="150dp"
+                android:layout_marginTop="200dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
